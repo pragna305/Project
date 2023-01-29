@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Faculty Information</title>
+</head>
+<style>
+  body{
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+  table{
+    border-collapse:collapse;
+    width:100%;
+  }
+    .purple{
+        border:2px solid #9B59B6;
+      }
+      
+      .purple thead{
+        background:#9B59B6;
+      }
+      
+      thead{
+        color:white;
+      }
+      
+      th,td{
+        text-align:center;
+        padding:5px 0;
+      }
+      
+      tbody tr:nth-child(even){
+        background:#ECF0F1;
+      }
+      tbody tr:nth-child(odd){
+        background:#97d451;
+      }
+      
+      tbody tr:hover{
+      background:#424548;
+        color:#FFFFFF;
+      }
+      
+      .fixed{
+        top:0;
+        position:fixed;
+        width:auto;
+        display:none;
+        border:none;
+      }
+      nav{
+        background-color: rgb(83, 213, 246);
+        overflow: hidden;
+    }
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FR</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav -auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link bi bi-house-fill" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-ticket-fill" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-person-lines-fill" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-sign-turn-right-fill" href="login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br/><br/>
+      <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+      <br>
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        FILTER
+      </a>
+      
+      <div class="offcanvas offcanvas-start" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Filter by
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Position</a></li>
+              <li><a class="dropdown-item" href="#">Institute</a></li>
+            </ul>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Institite
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">KMIT</a></li>
+              <li><a class="dropdown-item" href="#">NGIT</a></li>
+            </ul>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Position
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Position</a></li>
+              <li><a class="dropdown-item" href="#">Position</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <br><br>
+    <table class="purple">
+        <thead>
+          <tr>
+            <th>S.no</th>
+            <th>Institute</th>
+            <th>Faculty name</th>
+            <th>Position</th>
+            <th>Working status(Working or retired)</th>
+            <th>Vacancy(Yes/No)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>KMIT</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Working</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>NGIT</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Retired</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>KMIT</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Retired</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>KMEC</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Working</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>KMEC</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Working</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>NGIT</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Retired</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>KMIT</td>
+            <td>ABC</td>
+            <td>Position</td>
+            <td>Working</td>
+            <td>NO</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <br/>
+      <div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</body>
+</html>

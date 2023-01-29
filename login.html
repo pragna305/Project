@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Muli"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    nav{
+      background-color: rgb(83, 213, 246);
+      overflow: hidden;
+  }
+    body {
+      background-image: url('https://cdn.pixabay.com/photo/2016/01/19/01/42/library-1147815_960_720.jpg');
+      font-family: "Muli", sans-serif;
+    }
+    h1 {
+      color: rgb(255, 255, 255);
+      padding-bottom: 2rem;
+      font-weight: bold;
+    }
+    .text-center{
+      color: rgb(246, 0, 0);
+    }
+    a {
+      color: #333;
+    }
+    a:hover {
+      color: #e8d426;
+      text-decoration: none;
+    }
+    .form-control:focus {
+      color: #000;
+      background-color: rgb(21, 21, 21);
+      border: 2px solid #121212;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    button {
+      background: #e8d426;
+      border: #e8d426;
+      padding: 13px 180px;
+      border-radius: 50px;
+    }
+    button:hover {
+      background: #4ed0d0;
+      border: #59d5e5;
+    }
+  </style>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">FR</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav -auto ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link bi bi-house-fill" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-file-earmark-post-fill" aria-current="page" href="F11.html">Post a job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-newspaper" aria-current="page" href="Ab.html">Find a job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-ticket-fill" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-person-lines-fill" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bi bi-sign-turn-right-fill" href="login.html">Login/Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="pt-5">
+      <br/>
+      <h1 class="text-center">Login Page</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mx-auto">
+            <div class="card card-body">
+              <form
+                id="submitForm"
+                action="/login"
+                method="post"
+                data-parsley-validate=""
+                data-parsley-errors-messages-disabled="true"
+                noValidate=""
+                _lpchecked="1"
+              >
+                <input
+                  type="hidden"
+                  name="_csrf"
+                />
+                <div class="form-group required">
+                  <lsabel for="username">Username / Email</lsabel>
+                  <input
+                    type="text"
+                    class="form-control text-lowercase"
+                    id="username"
+                    required=""  
+                    name="username"
+                  />
+                </div>
+                <div class="form-group required">
+                  <label
+                    class="d-flex flex-row align-items-center"
+                    for="password"
+                    >Password
+                    <a
+                      class="ml-auto border-link small-xl"
+                      href="/forget-password"
+                      >Forget?</a
+                    ></label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    required=""
+                    id="password"
+                    name="password"
+                  />
+                </div>
+                <div class="form-group mt-4 mb-4">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="remember-me"
+                      name="remember-me"
+                      data-parsley-multiple="remember-me"
+                    />
+                    <label class="custom-control-label" for="remember-me"
+                      >Remember me?</label
+                    >
+                  </div>
+                </div>
+                <a href="Ab.html">
+                  <button type="button">Login</button>
+                </a>
+              </form>
+              <p class="small-xl pt-3 text-center">
+                <span class="text-muted">Not a member?</span>
+                <a href="signup.html">Sign up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+  </body>
+</html>

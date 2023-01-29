@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Document</title>
+    
+</head>
+<style>
+    nav{
+        background-color: rgb(83, 213, 246);
+        overflow: hidden;
+    }
+    body{
+      background-image: url('https://tse1.mm.bing.net/th?id=OIP.0ao7ia9h-v3zXjtdWFuRsQHaE6&pid=Api&P=0');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-color: #c8e8e9;
+    }
+    button{
+      display: block;
+      margin: auto;
+    }
+    .card-title{
+      color: black;
+    }
+    .card-text{
+      color: black;
+    }
+    .card{
+      width: 18rem;
+    }
+
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        display: contents;
+        justify-content: space-around;
+    }
+    .text{
+      color: black;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FR</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav -auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link bi bi-house-fill" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-ticket-fill" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-person-lines-fill" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bi bi-sign-turn-right-fill" href="login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br><br>
+      <div class="main">
+    <h1 class="text" >Choose an option:-</h1>
+    <br>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Vacancies</h5>
+          <p class="card-text">Check the list of vacancies and apply now</p>
+          <a href="vacancies.html" class="btn btn-primary">Click here</a>
+        </div>
+      </div>
+    <!-- <a href="vacancies.html">
+    <button style="color: aliceblue;" type="button" class="btn btn-primary btn-lg">Vacancies</button>
+</a> -->
+    <br>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <div class="card" >
+        <div class="card-body">
+          <h5 class="card-title" >Notifications</h5>
+          <p class="card-text" >Get notified for every new Vacancy</p>
+        </div>
+      </div>
+  </button>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Would you like to receive notifications for upcoming vacancies?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+</body>
+</html>
